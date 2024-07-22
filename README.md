@@ -35,7 +35,7 @@ This is a simple Node.js web service that returns the current temperature of a g
 1. Start the server:
    ```bash
     cd backend
-    npm start
+    node index.js
     ```
     This will start the server on `http://localhost:3000`.
 
