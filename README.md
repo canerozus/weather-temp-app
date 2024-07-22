@@ -21,21 +21,22 @@ This is a simple Node.js web service that returns the current temperature of a g
     ```
 
 2. Change to the project directory:
-
+    ```bash
     cd weather-temp-app
-
+    ```
 3. Install the dependencies:
-
+    ```bash
     cd backend
     npm install
-
+    ```
 
 ## Running the Application Locally
 
-1. Start the backend server:
+1. Start the server:
+   ```bash
     cd backend
     npm start
-
+    ```
     This will start the server on `http://localhost:3000`.
 
 ## API Endpoints
@@ -45,14 +46,14 @@ This is a simple Node.js web service that returns the current temperature of a g
 Fetch the temperature of a city using a GET request.
 
 **Request:**
-bash
+   ```bash
 curl -X GET 'http://localhost:3000/temperature?q=city_name'
-
-### GET /temperature
+    ```
+### POST /temperature
 
 Fetch the temperature of a city using a POST request.
 
 **Request:**
-bash
+   ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"query": "city_name"}' http://localhost:3000/temperature
-
+    ```
