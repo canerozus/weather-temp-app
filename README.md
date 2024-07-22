@@ -46,15 +46,17 @@ This is a simple Node.js web service that returns the current temperature of a g
 Fetch the temperature of a city using a GET request.
 
 **Request:**
-   ```bash
-    curl -X GET 'http://localhost:3000/temperature?q=city_name'
-    ```
+
+```bash
+curl -X GET 'http://localhost:3000/temperature?q=city_name'
+```
 
 ### POST /temperature
 
 Fetch the temperature of a city using a POST request.
 
 **Request:**
-   ```bash
-    curl -X POST -H "Content-Type: application/json" -d '{"query": "city_name"}' http://localhost:3000/temperature
-    ```
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"query": "city_name"}' http://localhost:3000/temperature
+```
